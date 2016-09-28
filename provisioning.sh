@@ -48,8 +48,6 @@ gdebi -n -q zlib1g_1.2.8.dfsg-2ubuntu4_amd64.deb
 
 cd ~/python_packages
 pip3 install --upgrade pip
-pip3 install Django-1.10.1.tar.gz
-pip3 install uwsgi-2.0.13.1.tar.gz
 
 echo -e "##############################\nLINE NUMBER: "$LINENO"\n##############################"
 
@@ -106,6 +104,7 @@ do
 done
 
 cd /opt/raynor
+pip install -r requirements.txt
 ./manage.py collectstatic --noinput
 
 echo -e "##############################\nLINE NUMBER: "$LINENO"\n##############################"
