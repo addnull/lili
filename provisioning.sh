@@ -139,6 +139,7 @@ do
 done
 
 cd /opt/raynor
+pip install -r requirements.txt
 ./manage.py collectstatic --noinput
 
 echo -e "##############################\nLINE NUMBER: "$LINENO"\n##############################"
